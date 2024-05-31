@@ -1,0 +1,162 @@
+#contenedor{
+    border:5px solid limegreen;   /* Colocamos un borde que indica los limites del todo el contenedor*/
+}
+
+
+#cabecera{   
+
+    background-color:hsla(92.045, 60%, 29%, 0.9); /*color de fondo de un elemento - contenedor div=cabecera*/
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+.derecho {
+    position: sticky;
+    top: 100px;
+	float:right; /* Propiedad flotante css, especifica cómo debe flotar un elemento*/
+    width:20%; /*Ancho sección menu*/
+    text-align:center; /*Alineación del text*/
+    padding:20px; /* Relleno */
+	background-color:hsla(286.667, 69%, 43%, 0.8); /*color morado con opacidad hsla*/
+
+    height: 100%;/* altura */
+    margin-top:7px; /*Margen superior*/	
+}
+* {
+    box-sizing: border-box; /*La box-sizingpropiedad CSS nos permite incluir el relleno y el borde en el ancho y alto total de un elemento*/
+  }
+.cuerpo{
+background-color: hsla(272.727, 100%, 37%,0.8);
+padding: 30px;
+text-align: justify;
+height: 100%;/* altura */
+margin-top:7px; /*Margen superior*/
+float:left; /* permite al elemento main flotar en una posicion*/
+width:80%; /* anchura del elemento */
+
+
+}
+
+
+#alinear{
+    display: flex;
+    
+    margin: 7px;
+    }
+
+
+
+ @media only screen and (max-width:620px) { /*consulta de medios especificando aplicar condiciones a la pantalla , en este caso 
+	un ancho máximo de 620px para adaptarse y no se distorsionen los elementos que hay en ella*/
+	   .derecho, .cuerpo {   /* se consideran los divs que hacen la función para maquetar nuestra página, utilizando las clases .menu, .main, .right 
+	  que seran ordenados y adaptados a la pantalla */
+		width:100%;
+        height: auto;
+
+        
+        
+	  }   
+    .imagen{
+        height: 20%;
+        width: auto;
+    }
+    
+     
+    .video{
+
+        width:auto;
+        max-width:400px;
+    }
+
+    video{
+
+        width:100%;
+        max-width:400px;
+    }
+
+    table{
+
+        width:100%;
+        max-width:400px;
+    }
+
+}
+.personajes{
+    width: 90%;
+    max-width: 500px;
+}
+.img{
+    width: 30%;
+    max-width: 500px;
+}
+#mapa{
+
+        width:70%;
+        max-width:auto;
+    }
+
+.pie{
+background-color:hsl(44.478, 89%, 44%);
+text-align: center;
+padding: 10px;  
+}
+
+body{
+    background-image: url("Imagenes/Fondo.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+#Logo{
+    margin-top: 2%;
+        width: auto;
+        max-width: 15%;
+        height: auto;
+        float: left;
+    }
+.derecho a {
+    background-color: hsla(0.19turn, 100%, 50%, 0.5);
+    padding: 7px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.derecho a:hover{
+    background-color: hsla(207.585, 96%, 10%, 0.2);
+    color: black;
+}
+h1{
+    font-style: oblique;
+    font-size: 50px;
+    color: white;
+}
+h2, h3, h4, h5, h6{
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    text-decoration: underline darkblue;
+}
+h7{
+font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+.a{ border-collapse:collapse; }
+.b{ border-collapse:separate; }
+td, th{border: 3px solid black;}
+#trucos{
+    width: 400px;
+}
